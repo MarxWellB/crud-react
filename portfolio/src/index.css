@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Opcional: asegurar tamaño de pantalla completa */
+html, body, #root {
+  height: 100%;
+}
