@@ -9,6 +9,9 @@ const allowed = [
   "http://localhost:5173",                 // dev local
   "https://TU-APP-VERCEL.vercel.app"       // prod 
 ];
+
+const app = express();
+
 app.use(cors({
   origin: allowed,
   methods: "GET,POST,PUT,DELETE",
@@ -17,7 +20,7 @@ app.use(cors({
 
 dotenv.config();
 
-const app = express();
+
 app.use(cors());
 app.use(express.json());
 
