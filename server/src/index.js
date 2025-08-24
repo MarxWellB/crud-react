@@ -5,7 +5,6 @@ import dotenv from 'dotenv';
 import { connectDB } from './config/db.js';
 import authRoutes from './routes/auth.routes.js';
 import userRoutes from './routes/user.routes.js';
-import cors from "cors";
 const allowed = [
   "http://localhost:5173",                 // dev local
   "https://TU-APP-VERCEL.vercel.app"       // prod 
